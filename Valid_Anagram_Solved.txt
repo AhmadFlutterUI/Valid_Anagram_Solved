@@ -1,0 +1,9 @@
+bool isAnagram(String s, String t) {
+   List chars=s.split('');
+   chars.sort();
+   s=chars.join();
+     List chart=t.split('');
+   chart.sort();
+   t=chart.join();
+   return s==t?true:false;
+  }
